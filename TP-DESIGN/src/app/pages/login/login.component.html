@@ -1,0 +1,66 @@
+<div class="flex flex-row justify-content-center">
+
+    <div class="col-6 flex flex-column " [style]="{'min-height':'100vh','background':'gray'}">
+        <img src="../../../assets/images/evisa2-removebg-preview.png" [style]="{'width':'250px'}">
+        <img src="../../../assets/images/oQqSFan6_400x400-removebg-preview.png" [style]="{'width':'160px','height':'40px','margin-left':'45px','position':'relative', 'bottom':'65px',}">
+        <img src="../../../assets/images/trajet-d-avion-a-point-avec-ligne-pointillee-ou-lignes-aeriennes-icone-de-plan-illustration-vectorielle-2c5ehag-removebg-preview-removebg-preview.png" [style]="{'width':'400px'}" >
+    </div>
+    
+    
+    <div class="col-1 flex flex-row justify-content-center"  [style]="{'min-height':'100vh','background':'rgb(5, 5, 92)'}">
+
+      
+            <div [style]="{ 'width': '650px','height':'550px', 'border':'gainsboro 1px', 'margin':'auto','position':'relative','margin-right':'130px','bottom':'40px'}" >
+                <div [style]="{'width':'485px' ,'margin-top':'50px' ,'border':'solid rgb(131, 131, 241) 1px ','border-radius':'20px','margin':'auto','background':'#fff'}">
+                <p-card  class="flex justify-content-center " [style]="{'border-radius':'20px','background':'#fff'}" >
+                
+                    <ng-template pTemplate="header" >
+                        <div class=" font-bold  flex align-items-center justify-content-center" [style]="{width:'300px','height':'60px' ,'margin-left':'88px', 'margin-top':'-20px','background':'rgb(255, 201, 83)','font-size':'28px','color':'rgb(12, 12, 129)'}">Connectez-vous</div>
+                        <br>
+                        <div class="flex justify-content-center">
+                            <img src="../../../assets/images/images.png" [style]="{width:'120px','height':'120'}">
+                        </div>
+                    </ng-template>
+                
+                    <div class="card flex flex-wrap justify-content-center gap-3">
+                        <span class="p-input-icon-left ">
+                            <i class="pi pi-user"  [style]="{color:'rgb(6, 6, 109)'}"></i>
+                            <input type="email" pInputText placeholder="Veuillez renseigner votre e-mail" [(ngModel)]="value" [style]="{width:'410px','text-align':'center','color':'#333'}"/>
+                        </span>
+                
+                        <span class="p-input-icon-left">
+                            <i class="pi pi-lock" [style]="{color:'rgb(6, 6, 109)'}"></i>
+                            <input type="password" pInputText placeholder="Veuillez renseigner votre mot de passe" [(ngModel)]="value2" [style]="{width:'410px','text-align':'center','color':'#333'}"/>
+                        </span>
+                    </div>
+                    <div class="flex justify-content-end ">
+                        <a routerLink="/password" [style]="{'position':'relative','top':'20px','margin-bottom':'30px', 'color':'rgb(255, 201, 83)','font-weight':'bold'}">Mot de passe oublié ?</a>
+                    </div>
+                    <ng-template pTemplate="footer">
+                        <p-button label="Connecter" styleClass="p-button-raised p-button-warning" [style]="{width:'350px', 'margin-left':'50px','font-weight':'bold','color':'white'}" (click)="Connexion()"></p-button>
+                    </ng-template>
+                </p-card>
+                <div>
+                    <p [style]="{'text-align':'center','color':'gray','font-weight':'bold','font-size':'22px'}">ou</p>
+                    <div class="flex flex-row flex-wrap justify-content-center gap-3" >
+                        <img src="../../../assets/images/images (1).jpg" [style]="{'width':'40%', 'height':'45px','margin-right':'45px'}"  >
+                        <img src="../../../assets/images/téléchargement (8).png" [style]="{'width':'40%', 'height':'45px','margin-left':'30px','margin-bottom':'15px'}" >
+                    </div>
+                </div>
+                </div>
+                </div>
+        
+
+
+    </div>
+    
+    
+    <div class="col-5"  [style]="{'min-height':'100vh','background':'rgb(5, 5, 92)'}">
+        <div class="flex flex-column justify-content-end">
+            <a routerLink="/enregistrement" [style]="{'color':'orange' ,'font-weight':'bold','font-size':'20px'}" routerLink="/enregistrement">Créer un compte</a>
+              <p [style]="{'color':'#fff', 'font-size':'36px','font-weight':'bold', 'position':'relative','left':'130px','top':'300px'}">BIENVENUE SUR <span [style]="{'color':'orange', 'font-size':'36px','font-weight':'bold'}">E-VISA</span></p>
+            <img src="../../../assets/images/blanc.png" [style]="{'width':'400px','height':'300px','position':'relative','top':'15px','left':'90px'}">
+        </div>
+    </div>
+
+</div>

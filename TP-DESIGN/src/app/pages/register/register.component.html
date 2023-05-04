@@ -1,0 +1,71 @@
+<div class="grid " [style]="{'min-height':'100vh'}" >
+    <div class="col-5" [style]="{'background':'whitesmoke'}"y>
+    <div [style]="{'margin-left':'30px'}">
+        <br>
+        <br>
+        <span [style]="{'font-size':'28px','font-weight':'bold', 'letter-spacing':'2px'}">INSCRIPTION</span>
+        <br>
+        <p>Veuillez, avant toute action créer votre compte E-VISA et profitez pleinement de nos services </p>
+        <br>
+        <br>
+        <div class="flex flex-column justify-content-center ">
+            <span [style]="{'margin':'0','font-size':'18px','font-weight':'bold'}">Nom</span>
+            <span class="p-input-icon-left">
+                <i class="pi pi-user"></i>
+                <input type="text" pInputText placeholder="Veuillez entrer votre nom" [(ngModel)]="value"  [style]="{'width':'420px','text-align':'center','border':'solid rgb(7, 7, 104) 1px'}"/>
+            </span>
+            <br>
+            <span [style]="{'margin':'0','font-size':'18px','font-weight':'bold'}">Prenom</span>
+            <span class="p-input-icon-left">
+                <i class="pi pi-user"></i>
+                <input type="text" pInputText placeholder="Veuillez entrer votre prenom" [(ngModel)]="value2" [style]="{'width':'420px','text-align':'center','border':'solid rgb(7, 7, 104) 1px',}"/>
+            </span>
+            <br>
+            <span [style]="{'margin':'0','font-size':'18px','font-weight':'bold'}">Adresse e-mail</span>
+            <span class="p-input-icon-left">
+                <i class="pi pi-envelope"></i>
+                <input type="email" pInputText placeholder="Veuillez entrer votre e-mail" [(ngModel)]="value3" [style]="{'width':'420px','text-align':'center','border':'solid rgb(7, 7, 104) 1px'}"/>
+            </span>
+            <br>
+            <span [style]="{'margin':'0','font-size':'18px','font-weight':'bold'}">Mot de passe</span>
+            <span class="p-input-icon-left">
+                <i class="pi pi-lock"></i>
+                <input type="password" pInputText placeholder="Veuillez entrer votre mot de passe" [(ngModel)]="value4" [style]="{'width':'420px','text-align':'center','border':'solid rgb(7, 7, 104) 1px'}"/>
+            </span>
+            <br>
+            <span [style]="{'margin':'0','font-size':'18px','font-weight':'bold'}">Confirmation mot de passe</span>
+            <span class="p-input-icon-left">
+                <i class="pi pi-lock"></i>
+                <input type="password" pInputText placeholder="Veuillez confirmer votre mot de passe" [(ngModel)]="value5" [style]="{'width':'420px','text-align':'center','border':'solid rgb(7, 7, 104) 1px'}"/>
+            </span>
+            <br>
+            <br>
+            <p-button label="Enregistrer" [style]="{'background':'rgb(7, 7, 104)','width':'420px','border-radius':'5px'}" (click)="Enregistrement()"></p-button>
+            
+        </div>
+    </div>
+    </div>
+
+    <div class="col-2"  [style]="{'background':'whitesmoke'}">
+        <a routerLink="/connexion" [style]="{'margin-left':'60px','font-size':'20px', 'font-weight':'bold','text-decoration':'underline','color':'rgb(7, 7, 104)'}">Se connecter ?</a>
+        <img src="../../../assets/images/avion-de-compagnie-aérienne-autour-de-monde-de-course-de-la-terre-10405828-removebg-preview.png" [style]="{'width':'150px','height':'150px','position':'relative','top':'10px','margin-left':'135px'}" >
+        <img src="../../../assets/images/Airport.png" [style]="{'position':'relative','right':'40px', 'height':'500px','bottom':'50px',}" >
+    </div>
+
+
+    <div class="col-5" [style]="{'background':'rgb(255, 201, 83)'}">
+           <div class="flex flex-column justify-content-end">
+            <img src="../../../assets/images/Evisa-removebg-preview.png" [style]="{'width':'250px','height':'200px','margin-left':'430px','position':'relative','bottom':'40px'}" >
+            <img src="../../../assets/images/oQqSFan6_400x400-removebg-preview.png " [style]="{'width':'160px','height':'40px','margin-left':'465px','position':'relative','bottom':'100px'}" >
+           </div>
+            
+            <div>
+                <img src="../../../assets/images/globe-removebg-preview.png" [style]="{'width':'200px', 'height':'200px','margin-left':'-75px'}">
+                <img src="../../../assets/images/travel-removebg-preview.png" [style]="{'width':'400px', 'height':'500px', 'position':'relative','bottom':'100px','left':'50px'}">
+            </div>
+            
+            
+
+        
+    </div>
+</div>
